@@ -1,0 +1,42 @@
+.description__section {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding-bottom: 60px;
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+  }
+  @media (min-width: 1920px) {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+}
+
+.description__section-card {
+  padding: 30px 30px 0;
+
+  @media (min-width: 768px) {
+    padding: 60px 60px 0;
+    width: 50%;
+  }
+  @media (min-width: 1024px) {
+    width: 33%;
+  }
+}
+
+.description__section-card-title {
+  margin-top: 30px;
+  font-size: 22px;
+  line-height: 1.2;
+  font-weight: 700;
+  color: #24a3ff;
+}
+
+.description__section-card-text {
+  margin-top: 15px;
+  font-size: 16px;
+  line-height: 1.6;
+  font-weight: 400;
+  color: #ffffff;
+}

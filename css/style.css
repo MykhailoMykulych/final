@@ -1,53 +1,6 @@
-body {
-    background-color: #323264;
-}
-
-.header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #F5F5FA33;
-    height: 45px;
-    padding: 10px 15px;
-    margin: 0;
-    
-}
-
-.nav__lang {
-    cursor: pointer;
-    border-radius: 8px; 
-    font-size: 12px;
-    line-height: 15px;
-    color: #FFFFFF;
-}
-
-.lang_ua:hover {
-  background-color: #F0145A; 
-}
-
-.lang_ru:hover {
-    background-color: #F0145A;   
-  }
-
-  .lang_en:hover {
-    background-color: #F0145A;
-  }
-
-  .nav__number {
-    font-size: 16px;
-    color: #FFFFFF;
-  }
-
-  .header__nav__icons {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  .nav__logo img {
-    margin-right: 19px;
-  }
-
-  .nav__services {
-    color: #FFFFFF;
-  }
+@import "./global.css";
+@import "./main-section.css";
+@import "./features-section.css";
+@import "./description-section.css";
+@import "wrapper-section__help.css";
+@import "wrapper-publications.css";

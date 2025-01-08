@@ -1,0 +1,36 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    min-width: 360px;
+  }
+  
+  .wrapper {
+    background: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
+    min-height: 100vh;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+  }
+
+
+  /* utility classes */
+  .no-scrollbar {
+    -ms-overflow-style: none;  /* IE и Edge */
+    scrollbar-width: none;  /* Firefox */
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+  /* utility classes --- end */
+
+
+
+  /* .test-flex {
+    display: flex;
+    gap: 20px;
+    padding: 30px;
+    & > div {
+      height: 500px;
+      width: 100%;
+      border-radius: 10px;
+      border: 1px solid teal;
+    }
+  } */

@@ -1,0 +1,137 @@
+.wrapper-section {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+
+  @media (min-width: 1024px) {
+    padding: 60px;
+    flex-direction: row;
+    align-items: center;
+    gap: 120px;
+  }
+
+  @media (min-width: 1440px) {
+    padding-left: 180px;
+    padding-right: 180px;
+  }
+
+  @media (min-width: 1920px) {
+    padding-left: 280px;
+    padding-right: 280px;
+  }
+}
+
+.wrapper-section__tabs-wrapper {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 4px;
+    width: 100%;
+    background-color: #b3b3ba;
+    @media (min-width: 1024px) {
+      left: unset;
+      right: 0;
+      bottom: 0;
+      height: 100%;
+      width: 4px;
+      margin-right: -60px;
+    }
+  }
+}
+.wrapper-section__tabs {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  overflow: auto;
+  max-width: 100%;
+  white-space: nowrap; /* Запрещаем перенос текста на новую строку */
+  font-weight: 700;
+  padding-bottom: 30px;
+  @media (min-width: 1024px) {
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 30px 0;
+  }
+}
+
+.wrapper-section__tabs-category {
+  font-size: 30px;
+  color: #b3b3ba;
+  line-height: 37px;
+}
+
+@media (min-width: 768px) {
+  .wrapper-section__tabs-category {
+    font-size: 38px;
+    line-height: 46px;
+  }
+}
+
+.wrapper-section__tabs-category:hover {
+  cursor: pointer;
+  color: #f0145a;
+}
+
+.wrapper-section__category-info {
+  color: #ffffff;
+}
+
+.wrapper-section__category-info-title {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 25px;
+  @media (min-width: 1024px) {
+    font-size: 30px;
+  }
+}
+
+.wrapper-section__category-info-descr {
+  font-size: 19px;
+  font-weight: 400;
+  line-height: 1.5;
+  @media (min-width: 1024px) {
+    margin-top: 30px;
+  }
+}
+
+.services-section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 30px 30px 0;
+  @media (min-width: 768px) {
+    padding: 60px 60px 0;
+  }
+
+  @media (min-width: 1920px) {
+    padding-left: 160px;
+  }
+}
+
+.services-section__info {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.2;
+  color: #24a3ff;
+}
+
+.services-section__info:hover {
+  color: #f0145a;
+  cursor: pointer;
+}
+
+.services-section__title {
+  font-weight: 700;
+  font-size: 30px;
+  background: linear-gradient(90.13deg, #f0145a 0.84%, #ef8080 99.96%);
+  -webkit-background-clip: text; /* Для браузеров WebKit (Chrome, Safari) */
+  color: transparent; /* Делаем текст прозрачным, чтобы виден был только градиент */
+  @media (min-width: 768px) {
+    font-size: 38px;
+  }
+}
